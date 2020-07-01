@@ -1,4 +1,9 @@
-calc: calc.c
-		gcc calc.c -o calc
+BIN := calc
+SOURCES := main.c
+SOURCES2 := calc.c
+CC := gcc
+$(BIN): $(SOURCES)
+		$(CC) $(SOURCES) $(SOURCES2) -o $(BIN) -g
+
 clean:
-		rm calc
+		rm -rf $(BIN)
