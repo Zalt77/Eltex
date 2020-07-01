@@ -1,4 +1,9 @@
-str: str2.c
-		gcc str2.c -o str2
+BIN := str
+SOURCES := main.c
+SOURCES2 := str.c
+CC := gcc
+$(BIN): $(SOURCES)
+		$(CC) $(SOURCES) $(SOURCES2) -o $(BIN) -g
+
 clean:
-		rm str2
+		rm -rf $(BIN)
