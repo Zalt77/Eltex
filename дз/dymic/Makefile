@@ -1,4 +1,4 @@
-BIN := calc
+BIN := main
 V := calc.c
 SOURCES := main.c
 CC := gcc
@@ -12,4 +12,4 @@ $(BIN): $(SOURCES)
 		export LD_LIBRARY_PATH=.; ./$(BIN)
 clean:
 		rm -rf $(BIN)
-		rm -rf libcalc.a
+		rm -rf libcalc.so
