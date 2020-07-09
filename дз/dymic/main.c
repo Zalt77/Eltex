@@ -3,6 +3,7 @@
 
 int main()
 {
+	
 	int a,b;
 	int sc;
 	float a1, b1;
