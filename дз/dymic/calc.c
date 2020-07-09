@@ -15,7 +15,6 @@ void dif(int a, int b){
 	printf("%d\n", a-b);
 }
 
-
 void dev(float a, float b){
 	printf("a = ");
 	scanf("%f", &a);
